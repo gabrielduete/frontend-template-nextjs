@@ -2,6 +2,18 @@
   "name": "youmoney",
   "version": "0.1.0",
   "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint 'src/**' --fix",
+      "cross-env CI=true yarn test --bail --findRelatedTests",
+      "git add"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,11 +33,14 @@
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.36.0",
+    "cross-env": "^7.0.3",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
     "jest": "^29.0.1",
     "jest-environment-jsdom": "^29.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "4.8.2"
   }

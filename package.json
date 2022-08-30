@@ -8,10 +8,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint 'src/**' --fix",
-      "cross-env CI=true yarn test --bail --findRelatedTests",
-      "git add"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn eslint --fix",
+      "yarn test --bail"
     ]
   },
   "scripts": {

@@ -13,6 +13,16 @@
       "yarn test --bail"
     ]
   },
+  "lint-prepush": {
+    "tasks": {
+      "*.{js,jsx,ts,tsx}": [
+        "npx prettier --check",
+        "yarn lint:pre-push",
+        "stylelint",
+        "jest --bail"
+      ]
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

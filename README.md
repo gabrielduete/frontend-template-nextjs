@@ -1,5 +1,5 @@
 # TEMPLATE NEXTJS
-<p> This template was created in order to speed up the setup settings in nextjs typescript projects, with some standardization settings, such as eslint, prettier, husky, pre-commit, pre-push and github actions. </p>
+<p> This template was created in order to speed up the setup settings in nextjs typescript projects, with some standardization settings, such as eslint, prettier, husky, pre-commit, pre-push, github actions and patterns </p>
 
 # Technologies 🛠️
 - [Nextjs](https://nextjs.org/)

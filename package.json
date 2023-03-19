@@ -1,7 +1,7 @@
 {
   "name": "frontend-template-nextjs",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -28,7 +28,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "12.2.5",
